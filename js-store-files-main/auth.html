@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/auth.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h2>Login</h2>
+			<span id="loader"></span>
+			<form action="">
+				<input type="text" placeholder="Username" value="mor_2314" />
+				<div id="modal-user">
+					<p>Invalid username</p>
+				</div>
+				<input type="password" placeholder="Password" value="83r5^_" />
+				<div id="modal-pass">
+					<p>Invalid password</p>
+				</div>
+				<button type="submit" id="submit">Login</button>
+					<!-- <div id="modal-item">
+						<div id="modal-button"><button>X</button></div>
+						<div><p></p></div>
+					</div> -->
+				</div>
+			</form>
+			<a href="./index.html">
+				<p>Back</p>
+				<i class="fa-solid fa-arrow-left"></i>
+			</a>
+		</div>
+		<script type="module" src="./auth.js"></script>
+		<script type="module" src="./utils/modal.js"></script>
+	</body>
+</html>

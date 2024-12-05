@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rea Store</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<div id="modal">
+			<div id="modal-item">
+				<div id="modal-button"><button>X</button></div>
+				<div><p></p></div>
+			</div>
+		</div>
+		<header>
+			<h1>ReaX Store!</h1>
+			<div id="button">
+				<a href="./auth.html" id="login">
+					Login
+					<i class="fa-solid fa-right-to-bracket"></i>
+				</a>
+				<a href="./dashboard.html" id="dashboard">
+					dashboard
+					<i class="fa-solid fa-house"></i>
+				</a>
+			</div>
+		</header>
+		<div id="search-box">
+			<h3>Shop</h3>
+			<div>
+				<input type="text" placeholder="Search Product..." id="input-pr" />
+				<button id="search-icon"
+					><i class="fa-solid fa-magnifying-glass"></i
+				></button>
+			</div>
+		</div>
+		<main id="main">
+			<p class="error">
+				no found result!
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</p>
+			<div id="product"> <span id="loader"></span></div>
+			<div id="filter-product">
+				<div id="category">
+					<i class="fa-solid fa-sliders"></i>
+					<h3>Categories</h3>
+				</div>
+				<ul>
+					<li class="selected">All</li>
+					<li>Electronics</li>
+					<li>Jewelery</li>
+					<li>Men's clothing</li>
+					<li>Women's clothing</li>
+				</ul>
+			</div>
+		</main>
+		<script type="module" src="./index.js"></script>
+	</body>
+</html>
